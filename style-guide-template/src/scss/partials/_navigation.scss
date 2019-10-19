@@ -1,10 +1,10 @@
 header {
-  background-color: $color-2;
+  background-color: $color-3;
 }
 
 .cd-logo {
   /* logo box style */
-  background-color: $color-1;
+  background-color: $color-2;
   width: 120px;
 
   @include MQ(M) {
@@ -14,7 +14,7 @@ header {
 
 .cd-main-nav {
   /* main navigation background color - full screen on small devices */
-  background: $color-2;
+  background-color: $color-2;
 
   li a {
     color: $color-5;
