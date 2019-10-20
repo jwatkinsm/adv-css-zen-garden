@@ -27,7 +27,7 @@ xBackground
 
 -------------------------------- */
 
-@import "background";
+@import "partials/background";
 
 /* -------------------------------- 
 
@@ -35,14 +35,14 @@ xPatterns
 
 -------------------------------- */
 
-@import "patterns";
+@import "partials/patterns";
 /* -------------------------------- 
 
 xNavigation 
 
 -------------------------------- */
 
-@import "navigation";
+@import "partials/navigation";
 
 /* -------------------------------- 
 
@@ -50,7 +50,7 @@ xPage title
 
 -------------------------------- */
 
-@import "page-title";
+@import "partials/page-title";
 
 /* -------------------------------- 
 
@@ -58,7 +58,7 @@ xTypography
 
 -------------------------------- */
 
-@import "typography";
+@import "partials/typography";
 
 
 @import 'partials/basic-style';
