@@ -1,10 +1,10 @@
 header {
-  background-color: $color-3;
+  background-color: $color-4;
 }
 
 .cd-logo {
   /* logo box style */
-  background-color: $color-2;
+  background-color: $color-4;
   width: 120px;
 
   @include MQ(M) {
