@@ -16,8 +16,7 @@ html {
 body { 
 	font: 75% georgia, sans-serif;
 	line-height: 1.88889;
-	color: #555753; 
-	background: #fff url(http://csszengarden.com/001/blossoms.jpg) no-repeat bottom right; 
+	color: #555753;  
 	margin: 0; 
 	padding: 0;
 	}
@@ -67,17 +66,15 @@ header h1 {
 	margin-top: 10px;
 	display: block;
 	width: 219px;
-	height: 87px;
+	height: 18px;
 	
 
 	
 	
 	}
 header h2 { 
-	 
-	margin-top: 58px; 
 	margin-bottom: 40px; 
-	width: 200px; 
+	width: 500px; 
 	height: 18px; 
 
 	}
