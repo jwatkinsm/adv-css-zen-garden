@@ -76,7 +76,7 @@ header h1 {
 	overflow: hidden;
 	}
 header h2 { 
-	background: transparent url(http://csszengarden.com/001/h2.gif) no-repeat top left; 
+	 
 	margin-top: 58px; 
 	margin-bottom: 40px; 
 	width: 200px; 
@@ -95,8 +95,8 @@ header {
 .summary {
 	clear: both; 
 	margin: 20px 20px 20px 10px; 
-	width: 160px; 
-	float: left;
+	width: 100%; 
+	
 	}
 .summary p {
 	font: italic 1.1em/2.2 georgia; 
