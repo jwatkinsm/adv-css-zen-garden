@@ -51,7 +51,7 @@ abbr {
 
 /* specific divs */
 .page-wrapper { 
-	width:100%;
+	min-width: 450px;
 	padding: 0 175px 0 10px;  
 	margin: 0 0 0 1%; 
 	position: relative;
@@ -98,13 +98,17 @@ header {
 	clear: right; 
 	padding: 0px 10px 0 10px;
 	}
+	.explanation h3, .benefits h3{
+		margin-right:10%;
+		text-align:right;
+	}
 .supporting {	
-	width:80%; 
+	width:90%; 
 	margin-bottom: 40px;
 	}
 	
 
-footer { 
+footer { background-color: #7D775C;
 	text-align: center; 
 	}
 footer a:link, footer a:visited { 
@@ -113,7 +117,7 @@ footer a:link, footer a:visited {
 
 .sidebar {
 	
-	width:25%;
+	width:15%;
 	height:80%;
 	position: absolute; 
 	top: 0; 
@@ -147,8 +151,8 @@ footer a:link, footer a:visited {
 
 
 .sidebar ul {
-	margin: 0;
-	padding: 0;
+	margin: 0.5%;
+	padding: .5%;
 	}
 .sidebar li {
 	line-height: 1.3em; 
