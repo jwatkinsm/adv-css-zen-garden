@@ -1,0 +1,71 @@
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One%7cDosis&display=swap');
+
+/* basic elements */
+html {
+	margin: 0;
+	padding: 0;
+	}
+
+body { 
+  background-color: chocolate;
+	font-family: 'Dosis', sans-serif;
+	margin: auto;
+    max-width: 80%;
+	}
+
+h1, h2, h3 { 
+	font-family: 'Alfa Slab One', serif;
+  text-align: center;
+  letter-spacing:.2em;
+  }
+  h3{
+    background-color: burlywood;
+  }
+  .preamble,.participation,.requirements {
+   h3{
+    padding:.5em;
+    padding-right:3em;
+    text-align: right;
+   }
+  }
+.explanation,.benefits{
+  h3{
+    padding:.5em;
+    padding-left:3em;
+    text-align:left;
+  }
+}
+p {
+  line-height: 1.5em;
+	}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  }
+aside{
+  background-color: aqua;
+  padding:1em;
+}
+
+@media (min-width: 50rem) {
+  .page-wrapper {
+    display: grid;
+    grid-gap: 2.5% 5%;
+  }
+
+  .intro {
+    grid-column: 1;
+    grid-column-end: 4;
+  }
+
+  aside {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+  }
+}
+
