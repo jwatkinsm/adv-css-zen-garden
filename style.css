@@ -49,6 +49,14 @@ aside {
   background-color: aqua;
   padding: 1em;
 }
+aside li {
+  margin: 0.8em;
+}
+aside li a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 3px solid red;
+}
 
 @media (min-width: 50rem) {
   .page-wrapper {
@@ -68,4 +76,4 @@ aside {
   }
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=style.css.map */

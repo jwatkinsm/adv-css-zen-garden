@@ -49,6 +49,14 @@ ul {
 aside{
   background-color: aqua;
   padding:1em;
+  li{
+    margin:.8em;
+    a{
+      color:black;
+      text-decoration: none;
+      border-bottom:3px solid red;
+    }
+  }
 }
 
 @media (min-width: 50rem) {
