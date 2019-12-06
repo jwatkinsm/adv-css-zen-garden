@@ -43,15 +43,13 @@ body {
 	font-family: 'Dosis', sans-serif;
 	margin: 0rem 2rem;
    .intro{
-     background-image:url('style-guide-template/src/assets/download.jpg');
+     padding-top:1rem;
+     background-image:url('style-guide-template/src/assets/Untitled-1sm.jpg');
      background-repeat: no-repeat;
-     background-size: 100% 60%;
+     background-size:100% 51%;
    }
   }
-  .summary,.preamble{
-    text-align:center;
-
-  }
+ 
 
 h1, h2, h3 { 
 	font-family: 'Alfa Slab One', serif;
@@ -62,7 +60,11 @@ h1, h2, h3 {
   h3{
     background-color: $color-2;
   }
-  .preamble,.participation,.requirements {
+  .summary,.preamble{
+    
+    color:white;
+  }
+ .participation,.requirements {
    h3{
     padding:.5em;
     padding-right:3em;

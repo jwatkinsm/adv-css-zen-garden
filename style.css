@@ -12,13 +12,10 @@ body {
   margin: 0rem 2rem;
 }
 body .intro {
-  background-image: url("style-guide-template/src/assets/download.jpg");
+  padding-top: 1rem;
+  background-image: url("style-guide-template/src/assets/Untitled-1sm.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 60%;
-}
-
-.summary, .preamble {
-  text-align: center;
+  background-size: 100% 51%;
 }
 
 h1, h2, h3 {
@@ -32,7 +29,11 @@ h3 {
   background-color: #633c4e;
 }
 
-.preamble h3, .participation h3, .requirements h3 {
+.summary, .preamble {
+  color: white;
+}
+
+.participation h3, .requirements h3 {
   padding: 0.5em;
   padding-right: 3em;
   text-align: right;
