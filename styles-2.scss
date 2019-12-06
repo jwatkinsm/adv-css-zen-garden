@@ -2,6 +2,36 @@
 
 @import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One%7cDosis&display=swap');
 
+$color-1: #006ec9; // Black
+$color-2: #633c4e; // Purple
+$color-3: #ecb576; // Orange
+$color-4: #0e1b30; // dark blue
+$color-5: #7b8aa7; // light blue
+$color-6: #ffffff; // white
+
+// additional colors
+
+$success: #6fce72; // green
+$alert: $color-3; // orange
+
+// fonts
+$primary-font: "Dosis", sans-serif;
+$secondary-font: "Alfa Slab One", serif;
+
+@mixin transform($options) {
+  -webkit-transform: $options;
+-moz-transform: $options;
+-ms-transform: $options;
+-o-transform: $options;
+transform: $options;
+}
+
+@mixin transition($options) {
+  -webkit-transition: $options;
+-moz-transition: $options;
+transition: $options;
+}
+
 /* basic elements */
 html {
 	margin: 0;
@@ -9,7 +39,7 @@ html {
 	}
 
 body { 
-  background-color: chocolate;
+  background-color: $color-3;
 	font-family: 'Dosis', sans-serif;
 	margin: auto;
     max-width: 80%;
@@ -19,9 +49,10 @@ h1, h2, h3 {
 	font-family: 'Alfa Slab One', serif;
   text-align: center;
   letter-spacing:.2em;
+  color:$color-5;
   }
   h3{
-    background-color: burlywood;
+    background-color: $color-2;
   }
   .preamble,.participation,.requirements {
    h3{
@@ -47,14 +78,18 @@ ul {
   padding: 0;
   }
 aside{
-  background-color: aqua;
+  background-color:$color-4;
   padding:1em;
+  color:$color-5;
+  h3{
+    background-color:$color-1;
+  }
   li{
-    margin:.8em;
+    margin:2em;
     a{
-      color:black;
+      color:$color-5;
       text-decoration: none;
-      border-bottom:3px solid red;
+      border-bottom:3px solid $color-1;
     }
   }
 }
@@ -73,7 +108,7 @@ aside{
   aside {
     grid-column-start: 3;
     grid-column-end: 4;
-    grid-row-start: 2;
+    grid-row: 1 span 2;
   }
 }
 
