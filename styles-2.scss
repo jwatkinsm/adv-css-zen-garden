@@ -41,9 +41,17 @@ html {
 body { 
   background-color: $color-3;
 	font-family: 'Dosis', sans-serif;
-	margin: auto;
-    max-width: 80%;
-	}
+	margin: 0rem 2rem;
+   .intro{
+     background-image:url('style-guide-template/src/assets/download.jpg');
+     background-repeat: no-repeat;
+     background-size: 100% 60%;
+   }
+  }
+  .summary,.preamble{
+    text-align:center;
+
+  }
 
 h1, h2, h3 { 
 	font-family: 'Alfa Slab One', serif;
@@ -108,7 +116,8 @@ aside{
   aside {
     grid-column-start: 3;
     grid-column-end: 4;
-    grid-row: 1 span 2;
+    grid-row:2;
+   
   }
 }
 
