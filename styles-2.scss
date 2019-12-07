@@ -108,7 +108,11 @@ aside{
     }
   }
 }
-
+footer{display:flex;
+  padding:1rem;
+  background-color:$color-4;
+  justify-content:space-evenly;
+}
 @media (min-width: 50rem) {
   .page-wrapper {
     display: grid;

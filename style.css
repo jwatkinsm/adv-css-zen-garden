@@ -78,6 +78,13 @@ aside li a {
   border-bottom: 3px solid #006ec9;
 }
 
+footer {
+  display: flex;
+  padding: 1rem;
+  background-color: #0e1b30;
+  justify-content: space-evenly;
+}
+
 @media (min-width: 50rem) {
   .page-wrapper {
     display: grid;
