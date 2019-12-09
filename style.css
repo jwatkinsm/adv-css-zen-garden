@@ -70,12 +70,53 @@ aside h3 {
   background-color: #006ec9;
 }
 aside li {
+  position: relative;
+  padding: 5px;
   margin: 2em;
+}
+aside li:hover a {
+  color: #006ec9;
+}
+aside li:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #006ec9;
+  border-left: 2px solid #006ec9;
+  transform-origin: left;
+  transition: 0.5s;
+  box-sizing: border-box;
+}
+aside li:hover:before {
+  border-color: #7b8aa7;
+  width: 50%;
+  height: 100%;
+}
+aside li:after {
+  content: "";
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #006ec9;
+  border-bottom: 2px solid #006ec9;
+  transform-origin: right;
+  transition: 0.5s;
+  box-sizing: border-box;
+}
+aside li:hover:after {
+  border-color: #7b8aa7;
+  width: 90%;
+  height: 0%;
 }
 aside li a {
   color: #7b8aa7;
   text-decoration: none;
-  border-bottom: 3px solid #006ec9;
 }
 
 footer {

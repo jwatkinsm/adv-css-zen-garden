@@ -99,12 +99,58 @@ aside{
   h3{
     background-color:$color-1;
   }
-  li{
+  li{position:relative;
+    padding:5px;
     margin:2em;
+    
+   &:hover{
+     a{
+       color:$color-1;
+     }
+   }
+     &:before{
+       content: '';
+       position:absolute;
+       top:0;
+       left:0;
+       width:10px;
+       height:10px;
+       border-top:2px solid $color-1;
+       border-left:2px solid $color-1;
+       transform-origin:left;
+       transition:.5s;
+       box-sizing:border-box;
+     }
+     &:hover:before{
+       border-color: $color-5;
+       width:50%;
+       height:100%;
+     
+     }
+     &:after{
+      content: '';
+      margin:0;
+      position:absolute;
+      bottom:0;
+      right:0;
+      width:10px;
+      height:10px;
+      border-right:2px solid $color-1;
+      border-bottom:2px solid $color-1;
+      transform-origin:right;
+      transition:.5s;
+      box-sizing:border-box;
+    }
+    &:hover:after{
+      border-color: $color-5;
+      width:90%;
+      height:0%;
+    
+    }
     a{
       color:$color-5;
       text-decoration: none;
-      border-bottom:3px solid $color-1;
+      
     }
   }
 }
