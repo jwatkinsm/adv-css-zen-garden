@@ -82,6 +82,7 @@ aside li {
   margin: 2em;
 }
 aside li:hover a {
+  font-size: 20px;
   color: #006ec9;
 }
 aside li:before {
@@ -131,6 +132,40 @@ footer {
   padding: 1rem;
   background-color: #0e1b30;
   justify-content: space-evenly;
+}
+footer a {
+  position: relative;
+  padding: 0 10px;
+  color: #006ec9;
+  text-decoration: none;
+  font-size: 20px;
+}
+footer a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #006ec9;
+  border-left: 2px solid #006ec9;
+  transform-origin: left;
+  transition: 0.5s;
+  box-sizing: border-box;
+}
+footer a:after {
+  content: "";
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #006ec9;
+  border-bottom: 2px solid #006ec9;
+  transform-origin: right;
+  transition: 0.5s;
+  box-sizing: border-box;
 }
 
 @media (min-width: 50rem) {
