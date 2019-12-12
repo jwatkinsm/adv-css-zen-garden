@@ -120,6 +120,7 @@ aside{
 
   h3{
     background-color:$color-1;
+    position:relative;
     &:before{
       content: '';
       position:absolute;
@@ -199,7 +200,6 @@ aside{
     a{
       color:$color-5;
       text-decoration: none;
-      
     }
   }
 }
