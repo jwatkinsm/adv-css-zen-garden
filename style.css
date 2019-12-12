@@ -87,6 +87,7 @@ aside::before {
 }
 aside h3 {
   background-color: #006ec9;
+  position: relative;
 }
 aside h3:before {
   content: "";
@@ -97,10 +98,19 @@ aside h3:before {
   height: 1%;
   border-top: 2px solid #7b8aa7;
   border-left: 2px solid #7b8aa7;
+  -webkit-transform-origin: left;
+  -moz-transform-origin: left;
+  -ms-transform-origin: left;
+  -o-transform-origin: left;
   transform-origin: left;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
   transition: 0.5s;
   box-sizing: border-box;
-  animation: techBefore 2s linear infinite;
+  -webkit-animation: techBefore 5s linear infinite;
+  -moz-animation: techBefore 5s linear infinite;
+  -o-animation: techBefore 5s linear infinite;
+  animation: techBefore 5s linear infinite;
 }
 aside h3:after {
   content: "";
@@ -113,9 +123,14 @@ aside h3:after {
   border-right: 2px solid #7b8aa7;
   border-bottom: 2px solid #7b8aa7;
   transform-origin: right;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
   transition: 0.5s;
   box-sizing: border-box;
-  animation: techBefore 2s linear infinite;
+  -webkit-animation: techBefore 5s linear infinite;
+  -moz-animation: techBefore 5s linear infinite;
+  -o-animation: techBefore 5s linear infinite;
+  animation: techBefore 5s linear infinite;
 }
 aside li {
   position: relative;
@@ -135,7 +150,13 @@ aside li:before {
   height: 10px;
   border-top: 2px solid #006ec9;
   border-left: 2px solid #006ec9;
+  -webkit-transform-origin: left;
+  -moz-transform-origin: left;
+  -ms-transform-origin: left;
+  -o-transform-origin: left;
   transform-origin: left;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
   transition: 0.5s;
   box-sizing: border-box;
 }
@@ -195,9 +216,14 @@ footer a:before {
   -ms-transform-origin: left;
   -o-transform-origin: left;
   transform-origin: left;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
   transition: 0.5s;
   box-sizing: border-box;
-  animation: techBefore 2s linear infinite;
+  -webkit-animation: techBefore 5s linear infinite;
+  -moz-animation: techBefore 5s linear infinite;
+  -o-animation: techBefore 5s linear infinite;
+  animation: techBefore 5s linear infinite;
 }
 footer a:after {
   content: "";
@@ -212,7 +238,7 @@ footer a:after {
   transform-origin: right;
   transition: 0.5s;
   box-sizing: border-box;
-  animation: techBefore 2s linear infinite;
+  animation: techBefore 5s linear infinite;
 }
 
 @keyframes techBefore {
