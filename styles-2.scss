@@ -133,7 +133,7 @@ aside{
       transform-origin:left;
       transition:.5s;
       box-sizing:border-box;
-      animation: techBefore 2s linear infinite;
+      animation: techBefore 5s linear infinite;
     }
     &:after{
       content: '';
@@ -148,7 +148,7 @@ aside{
       transform-origin:right;
       transition:.5s;
       box-sizing:border-box;
-      animation: techBefore 2s linear infinite;
+      animation: techBefore 5s linear infinite;
     }
   }
   li{
@@ -226,7 +226,7 @@ footer{
       @include transformLeft;
       transition:.5s;
       box-sizing:border-box;
-      animation: techBefore 2s linear infinite;
+      animation: techBefore 5s linear infinite;
     }
     &:after{
       content: '';
@@ -241,7 +241,7 @@ footer{
       transform-origin:right;
       transition:.5s;
       box-sizing:border-box;
-      animation: techBefore 2s linear infinite;
+      animation: techBefore 5s linear infinite;
     }
   }
 }
