@@ -24,11 +24,40 @@ $secondary-font: "Alfa Slab One", serif;
 transform-origin: left;
 }
 
+@mixin transformRight {
+  -webkit-transform-origin: right;
+-moz-transform-origin: right;
+-ms-transform-origin: right;
+-o-transform-origin: right;
+transform-origin: right;
+}
+
 @mixin transition {
   -webkit-transition:.5s ;
 -moz-transition:.5s ;
 transition:.5s ;
 }
+@mixin animation{
+  -webkit-animation: techBefore 5s linear infinite;
+  -moz-animation: techBefore 5s linear infinite;
+  -o-animation: techBefore 5s linear infinite;
+  animation: techBefore 5s linear infinite;
+}
+@mixin animationBefore{
+  content: '';
+  position:absolute;
+  top:0;
+  left:0;
+  width:0px;
+  height:1%;
+  border-top:2px solid $color-5;
+  border-left:2px solid $color-5;
+  @include transformLeft;
+  @include transition;
+  box-sizing:border-box;
+  @include animation;
+}
+
 @mixin animation{
   -webkit-animation: techBefore 5s linear infinite;
   -moz-animation: techBefore 5s linear infinite;
@@ -142,7 +171,7 @@ aside{
     background-color:$color-1;
     position:relative;
     &:before{
-   @include animationBefore;
+      @include animationBefore;
     }
     &:after{
       content: '';
@@ -154,7 +183,7 @@ aside{
       height:10px;
       border-right:2px solid $color-5;
       border-bottom:2px solid $color-5;
-      transform-origin: right;
+      @include transformRight;
       @include transition;
       box-sizing:border-box;
       @include animation;
@@ -197,8 +226,8 @@ aside{
       height:10px;
       border-right:2px solid $color-1;
       border-bottom:2px solid $color-1;
-      transform-origin:right;
-      transition:.5s;
+      @include transformRight;
+      @include transition;
       box-sizing:border-box;
     }
     &:hover:after{
@@ -249,8 +278,8 @@ footer{
       height:10px;
       border-right:2px solid $color-5;
       border-bottom:2px solid $color-5;
-      transform-origin:right;
-      transition:.5s;
+      @include transformRight;
+      @include transition;
       box-sizing:border-box;
       animation: techBefore 5s linear infinite;
     }
