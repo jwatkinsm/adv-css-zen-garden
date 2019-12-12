@@ -162,6 +162,10 @@ footer a:before {
   height: 1%;
   border-top: 2px solid #7b8aa7;
   border-left: 2px solid #7b8aa7;
+  -webkit-transform-origin: left;
+  -moz-transform-origin: left;
+  -ms-transform-origin: left;
+  -o-transform-origin: left;
   transform-origin: left;
   transition: 0.5s;
   box-sizing: border-box;

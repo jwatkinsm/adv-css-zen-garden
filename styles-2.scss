@@ -16,12 +16,12 @@ $alert: $color-3; // orange
 $primary-font: "Dosis", sans-serif;
 $secondary-font: "Alfa Slab One", serif;
 
-@mixin transform($options) {
-  -webkit-transform: $options;
--moz-transform: $options;
--ms-transform: $options;
--o-transform: $options;
-transform: $options;
+@mixin transformLeft {
+  -webkit-transform-origin: left;
+-moz-transform-origin: left;
+-ms-transform-origin: left;
+-o-transform-origin: left;
+transform-origin: left;
 }
 
 @mixin transition($options) {
@@ -223,7 +223,7 @@ footer{
       height:1%;
       border-top:2px solid $color-5;
       border-left:2px solid $color-5;
-      transform-origin:left;
+      @include transformLeft;
       transition:.5s;
       box-sizing:border-box;
       animation: techBefore 2s linear infinite;
