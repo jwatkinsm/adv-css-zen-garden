@@ -180,7 +180,7 @@ footer{display:flex;
       transform-origin:left;
       transition:.5s;
       box-sizing:border-box;
-      animation: techBefore 2s linear infinite;
+      animation: techBefore 2s    linear infinite;
     }
     @keyframes techBefore{
       0%{
@@ -221,7 +221,7 @@ body{
   .intro {
     grid-column: 1;
     grid-column-end: 4;
-    background-image:url('style-guide-template/src/assets/Untitled-1.jpg');
+    background-image:url('style-guide-template/src/assets/');
     background-size:100% 60%;
   header, .summary{
     padding-left:1rem;
