@@ -24,10 +24,10 @@ $secondary-font: "Alfa Slab One", serif;
 transform-origin: left;
 }
 
-@mixin transition($options) {
-  -webkit-transition: $options;
--moz-transition: $options;
-transition: $options;
+@mixin transition {
+  -webkit-transition:.5s ;
+-moz-transition:.5s ;
+transition:.5s ;
 }
 
 /* basic elements */
@@ -129,8 +129,8 @@ aside{
       height:1%;
       border-top:2px solid $color-5;
       border-left:2px solid $color-5;
-      transform-origin:left;
-      transition:.5s;
+      @include transformLeft;
+      @include transition;
       box-sizing:border-box;
       animation: techBefore 2s linear infinite;
     }
@@ -168,7 +168,7 @@ aside{
        height:10px;
        border-top:2px solid $color-1;
        border-left:2px solid $color-1;
-       transform-origin:left;
+       @include transformLeft;
        transition:.5s;
        box-sizing:border-box;
      }
