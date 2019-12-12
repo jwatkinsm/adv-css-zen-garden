@@ -13,7 +13,7 @@ body {
 }
 body .intro {
   padding-top: 1rem;
-  background-image: url("style-guide-template/src/assets/Untitled-1sm.jpg");
+  background-image: url("style-guide-template/src/assets/AdobeStock_300892500sm.jpg");
   background-repeat: no-repeat;
   background-size: 100% 45%;
 }
@@ -69,9 +69,22 @@ ul {
 }
 
 aside {
+  position: relative;
   background-color: #0e1b30;
   padding: 1em;
   color: #7b8aa7;
+}
+aside::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("style-guide-template/src/assets/dark-grungy-paper-texture-free.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.1;
 }
 aside h3 {
   background-color: #006ec9;
@@ -192,8 +205,8 @@ footer a:after {
   body .intro {
     grid-column: 1;
     grid-column-end: 4;
-    background-image: url("style-guide-template/src/assets/Untitled-1.jpg");
-    background-size: 100% 60%;
+    background-image: url("style-guide-template/src/assets/AdobeStock_300892500.jpg");
+    background-size: 100% 55%;
   }
   body .intro header, body .intro .summary {
     padding-left: 1rem;
