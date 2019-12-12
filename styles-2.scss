@@ -213,10 +213,23 @@ aside{
   }
 }
 footer{
+  position:relative;
   display:flex;
   padding:1rem;
   background-color:$color-4;
   justify-content:space-evenly;
+  &:before{
+    content:'';
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      background-image:url('style-guide-template/src/assets/dark-grungy-paper-texture-free.png');
+      background-size: cover;
+      background-repeat:no-repeat;
+      opacity:.1;
+  }
   a{
     position:relative;
     padding:0 10px;
