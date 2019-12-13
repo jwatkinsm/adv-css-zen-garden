@@ -1,0 +1,27 @@
+@media (min-width: 50rem) {
+    .page-wrapper {
+      display: grid;
+      grid-gap: 2.5% 5%;
+    }
+  
+  body .intro {
+      grid-column: 1;
+      grid-column-end: 4;
+      background-image:url('style-guide-template/src/assets/AdobeStock_300892500.jpg');
+      background-size:100% 55%;
+      header, .summary{
+        padding-left:1rem;
+      }
+      h1, h2{
+        margin:1rem;
+        color:$color-6;
+        text-align:left;
+      }
+    }
+    aside {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row:2;
+     
+    }
+  }

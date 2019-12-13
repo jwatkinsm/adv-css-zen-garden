@@ -1,81 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One%7cDosis&display=swap');
-
-$color-1: #006ec9; // Black
-$color-2: #633c4e; // Purple
-$color-3: #ecb576; // Orange
-$color-4: #0e1b30; // dark blue
-$color-5: #7b8aa7; // light blue
-$color-6: #ffffff; // white
-
-// additional colors
-
-$success: #6fce72; // green
-$alert: $color-3; // orange
-
-// fonts
-$primary-font: "Dosis", sans-serif;
-$secondary-font: "Alfa Slab One", serif;
-
-@mixin transformLeft {
-  -webkit-transform-origin: left;
--moz-transform-origin: left;
--ms-transform-origin: left;
--o-transform-origin: left;
-transform-origin: left;
-}
-
-@mixin transformRight {
-  -webkit-transform-origin: right;
--moz-transform-origin: right;
--ms-transform-origin: right;
--o-transform-origin: right;
-transform-origin: right;
-}
-
-@mixin transition {
-  -webkit-transition:.5s ;
--moz-transition:.5s ;
-transition:.5s ;
-}
-
-@mixin animation{
-  -webkit-animation: techBefore 5s linear infinite;
-  -moz-animation: techBefore 5s linear infinite;
-  -o-animation: techBefore 5s linear infinite;
-  animation: techBefore 5s linear infinite;
-}
-
-@mixin animationBefore{
-  content: '';
-  position:absolute;
-  top:0;
-  left:0;
-  width:0px;
-  height:1%;
-  border-top:2px solid $color-5;
-  border-left:2px solid $color-5;
-  @include transformLeft;
-  @include transition;
-  box-sizing:border-box;
-  @include animation;
-}
-
-@mixin animationAfter{
-  content: '';
-      margin:0;
-      position:absolute;
-      bottom:0;
-      right:0;
-      width:10px;
-      height:10px;
-      border-right:2px solid $color-5;
-      border-bottom:2px solid $color-5;
-      @include transformRight;
-      @include transition;
-      box-sizing:border-box;
-      @include animation;
-}
-
+//varables
+@import "varables.scss";
+//mixins
+@import "mixins.scss";
 /* basic elements */
 html {
 	margin: 0;
@@ -152,16 +79,7 @@ aside{
   padding:1em;
   color:$color-5;
     &::before{
-      content:'';
-      position:absolute;
-      top:0;
-      left:0;
-      width:100%;
-      height:100%;
-      background-image:url('style-guide-template/src/assets/dark-grungy-paper-texture-free.png');
-      background-size: cover;
-      background-repeat:no-repeat;
-      opacity:.1;
+     @include texture;
     }
 
   h3{
@@ -171,7 +89,7 @@ aside{
       @include animationBefore;
     }
     &:after{
-      @include animationAfter
+    @include animationAfter;
     }
   }
   li{
@@ -184,17 +102,7 @@ aside{
      }
    }
      &:before{
-       content: '';
-       position:absolute;
-       top:0;
-       left:0;
-       width:10px;
-       height:10px;
-       border-top:2px solid $color-1;
-       border-left:2px solid $color-1;
-       @include transformLeft;
-       @include transition;
-       box-sizing:border-box;
+       @include transitionBefore;
      }
      &:hover:before{
        border-color: $color-5;
@@ -202,18 +110,7 @@ aside{
        height:100%;
      }
      &:after{
-      content: '';
-      margin:0;
-      position:absolute;
-      bottom:0;
-      right:0;
-      width:10px;
-      height:10px;
-      border-right:2px solid $color-1;
-      border-bottom:2px solid $color-1;
-      @include transformRight;
-      @include transition;
-      box-sizing:border-box;
+      @include transitionAfter;
     }
     &:hover:after{
       border-color: $color-5;
@@ -233,16 +130,7 @@ footer{
   background-color:$color-4;
   justify-content:space-evenly;
   &:before{
-    content:'';
-      position:absolute;
-      top:0;
-      left:0;
-      width:100%;
-      height:100%;
-      background-image:url('style-guide-template/src/assets/dark-grungy-paper-texture-free.png');
-      background-size: cover;
-      background-repeat:no-repeat;
-      opacity:.1;
+    @include texture;
   }
   a{
     position:relative;
@@ -254,7 +142,7 @@ footer{
       @include animationBefore;
     }
     &:after{
-      @include animationAfter;
+    @include animationAfter;
     }
   }
 }
@@ -262,48 +150,26 @@ footer{
 @keyframes techBefore {
   0%{
     width: 100%;
-    height: 0%;
+    height: 5%;
   }
-  25% {
-    width: 0px;
+25% {
+    width: 25%;
     height: 5%;
   }
   50% {
-    width: 0px;
+    width: 5%;
     height: 100%;
+  }
+  75%{
+    width:5%;
+    height:50%;
   }
   100% {
     width: 100%;
-    height: 0%;
+    height: 10%;
   }
 }
 
-@media (min-width: 50rem) {
-  .page-wrapper {
-    display: grid;
-    grid-gap: 2.5% 5%;
-  }
-
-body .intro {
-    grid-column: 1;
-    grid-column-end: 4;
-    background-image:url('style-guide-template/src/assets/AdobeStock_300892500.jpg');
-    background-size:100% 55%;
-    header, .summary{
-      padding-left:1rem;
-    }
-    h1, h2{
-      margin:1rem;
-      color:$color-6;
-      text-align:left;
-    }
-  }
-  aside {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row:2;
-   
-  }
-}
+@import "largeView.scss"
 
 /*# sourceMappingURL=style.css.map */

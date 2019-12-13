@@ -122,6 +122,10 @@ aside h3:after {
   height: 10px;
   border-right: 2px solid #7b8aa7;
   border-bottom: 2px solid #7b8aa7;
+  -webkit-transform-origin: right;
+  -moz-transform-origin: right;
+  -ms-transform-origin: right;
+  -o-transform-origin: right;
   transform-origin: right;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -175,7 +179,13 @@ aside li:after {
   height: 10px;
   border-right: 2px solid #006ec9;
   border-bottom: 2px solid #006ec9;
+  -webkit-transform-origin: right;
+  -moz-transform-origin: right;
+  -ms-transform-origin: right;
+  -o-transform-origin: right;
   transform-origin: right;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
   transition: 0.5s;
   box-sizing: border-box;
 }
@@ -248,28 +258,41 @@ footer a:after {
   height: 10px;
   border-right: 2px solid #7b8aa7;
   border-bottom: 2px solid #7b8aa7;
+  -webkit-transform-origin: right;
+  -moz-transform-origin: right;
+  -ms-transform-origin: right;
+  -o-transform-origin: right;
   transform-origin: right;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
   transition: 0.5s;
   box-sizing: border-box;
+  -webkit-animation: techBefore 5s linear infinite;
+  -moz-animation: techBefore 5s linear infinite;
+  -o-animation: techBefore 5s linear infinite;
   animation: techBefore 5s linear infinite;
 }
 
 @keyframes techBefore {
   0% {
     width: 100%;
-    height: 0%;
+    height: 5%;
   }
   25% {
-    width: 0px;
+    width: 25%;
     height: 5%;
   }
   50% {
-    width: 0px;
+    width: 5%;
     height: 100%;
+  }
+  75% {
+    width: 5%;
+    height: 50%;
   }
   100% {
     width: 100%;
-    height: 0%;
+    height: 10%;
   }
 }
 @media (min-width: 50rem) {
@@ -299,6 +322,5 @@ footer a:after {
     grid-row: 2;
   }
 }
-/*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */
