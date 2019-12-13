@@ -37,12 +37,14 @@ transform-origin: right;
 -moz-transition:.5s ;
 transition:.5s ;
 }
+
 @mixin animation{
   -webkit-animation: techBefore 5s linear infinite;
   -moz-animation: techBefore 5s linear infinite;
   -o-animation: techBefore 5s linear infinite;
   animation: techBefore 5s linear infinite;
 }
+
 @mixin animationBefore{
   content: '';
   position:absolute;
@@ -58,25 +60,20 @@ transition:.5s ;
   @include animation;
 }
 
-@mixin animation{
-  -webkit-animation: techBefore 5s linear infinite;
-  -moz-animation: techBefore 5s linear infinite;
-  -o-animation: techBefore 5s linear infinite;
-  animation: techBefore 5s linear infinite;
-}
-@mixin animationBefore{
+@mixin animationAfter{
   content: '';
-  position:absolute;
-  top:0;
-  left:0;
-  width:0px;
-  height:1%;
-  border-top:2px solid $color-5;
-  border-left:2px solid $color-5;
-  @include transformLeft;
-  @include transition;
-  box-sizing:border-box;
-  @include animation;
+      margin:0;
+      position:absolute;
+      bottom:0;
+      right:0;
+      width:10px;
+      height:10px;
+      border-right:2px solid $color-5;
+      border-bottom:2px solid $color-5;
+      @include transformRight;
+      @include transition;
+      box-sizing:border-box;
+      @include animation;
 }
 
 /* basic elements */
@@ -174,19 +171,7 @@ aside{
       @include animationBefore;
     }
     &:after{
-      content: '';
-      margin:0;
-      position:absolute;
-      bottom:0;
-      right:0;
-      width:10px;
-      height:10px;
-      border-right:2px solid $color-5;
-      border-bottom:2px solid $color-5;
-      @include transformRight;
-      @include transition;
-      box-sizing:border-box;
-      @include animation;
+      @include animationAfter
     }
   }
   li{
@@ -269,19 +254,7 @@ footer{
       @include animationBefore;
     }
     &:after{
-      content: '';
-      margin:0;
-      position:absolute;
-      bottom:0;
-      right:0;
-      width:10px;
-      height:10px;
-      border-right:2px solid $color-5;
-      border-bottom:2px solid $color-5;
-      @include transformRight;
-      @include transition;
-      box-sizing:border-box;
-      animation: techBefore 5s linear infinite;
+      @include animationAfter;
     }
   }
 }
