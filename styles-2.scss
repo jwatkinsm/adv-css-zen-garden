@@ -126,6 +126,7 @@ aside{
 footer{
   position:relative;
   display:flex;
+  display:-webkit-flex;
   padding:1rem;
   background-color:$color-4;
   justify-content:space-evenly;
@@ -134,6 +135,7 @@ footer{
   }
   a{
     position:relative;
+    margin:auto;
     padding:0 10px;
     color:$color-1;
     text-decoration: none;

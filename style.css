@@ -202,6 +202,7 @@ aside li a {
 footer {
   position: relative;
   display: flex;
+  display: -webkit-flex;
   padding: 1rem;
   background-color: #0e1b30;
   justify-content: space-evenly;
@@ -220,6 +221,7 @@ footer:before {
 }
 footer a {
   position: relative;
+  margin: auto;
   padding: 0 10px;
   color: #006ec9;
   text-decoration: none;
